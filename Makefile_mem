@@ -1,0 +1,6 @@
+elevator_mem: elevator.c solve.c fw.c
+	gcc -DMEM -o elevator_rec elevator.c solve.c fw.c
+
+clean:
+	-rm -f *.o
+	-rm -f elevator_mem

@@ -1,0 +1,6 @@
+elevator_dp: elevator.c solve.c fw.c
+	gcc -DDP -o elevator_rec elevator.c solve.c fw.c
+
+clean:
+	-rm -f *.o
+	-rm -f elevator_dp
